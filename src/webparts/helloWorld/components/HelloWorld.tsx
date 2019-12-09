@@ -18,7 +18,23 @@ export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
                 <span className={ styles.label }>Learn more</span>
               </a>
               <DefaultButton primary>Test 1</DefaultButton>
+              <DefaultButton>Test 3</DefaultButton>
               <PrimaryButton>Test 2</PrimaryButton>
+              <PrimaryButton 
+                menuProps={{
+                  shouldFocusOnMount: true,
+                  items: [
+                    {
+                      key: 'MenuItem1',
+                      name: 'Menu Item 1'
+                    },
+                    {
+                      key: 'MenuItem1',
+                      name: 'Menu Item 1'
+                    },
+                  ]
+                }}
+              >Menu Button 2</PrimaryButton>
             </div>
           </div>
         </div>
